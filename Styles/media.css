@@ -1,0 +1,93 @@
+@media (max-width: 768px) {
+    .container {
+        padding: 0 1rem;
+    }
+    
+    .header-content {
+        gap: 1rem;
+    }
+
+    .logo{
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    
+    .bookmark-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .bookmark-content{
+        align-self: flex-start;
+    }
+    
+    .bookmark-actions {
+        align-self: flex-end;
+    }
+    
+    .toast {
+        right: 1rem;
+        left: 1rem;
+        bottom: 1rem;
+    }
+}
+
+@media (max-width: 435px) {
+    .logo{
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+
+    .theme-switcher {
+        display: flex;
+        gap: 0.5rem;
+        background: var(--secondary-bg);
+        padding: 0.3rem;
+        border-radius: var(--radius);
+        border: 1px solid var(--border);
+    }
+
+    .theme-btn {
+        background: transparent;
+        border: none;
+        padding: 0.3rem;
+        border-radius: 6px;
+        cursor: pointer;
+        color: var(--text-secondary);
+        transition: var(--transition);
+    }
+    
+    .bookmark-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    
+    .bookmark-actions {
+        align-self: flex-end;
+    }
+    
+    .toast {
+        right: 1rem;
+        left: 1rem;
+        bottom: 1rem;
+    }
+}
+
+@media (max-width: 390px) {
+    .header-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    .logo{
+        align-self: center;
+    }
+    .theme-switcher {
+        align-self: center;
+        width: 70%;
+        display: flex;
+        justify-content: center;
+    }
+}
