@@ -70,6 +70,22 @@ body {
     align-items: center;
     /* letter-spacing: 2px; */
     gap: 0.5rem;
+    position: relative;
+    cursor: pointer;
+}
+.logo::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 2.5rem;
+    background: linear-gradient(90deg, var(--accent), #b8e7d677);;
+    z-index: -1;
+    transition: width 0.3s ease;
+}
+.logo:hover::after{
+    width: 85%;
 }
 .logo i {
     color: var(--accent);
